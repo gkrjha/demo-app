@@ -1,0 +1,49 @@
+.trending-container {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.trending-container h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.trending-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.trending-card {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 10px;
+  background: #fafafa;
+  transition: all 0.3s ease;
+}
+
+.trending-card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.trending-card img {
+  width: 100px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 15px;
+}
+
+.trending-info h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.trending-info p,
+.trending-info span {
+  font-size: 14px;
+  color: #666;
+}

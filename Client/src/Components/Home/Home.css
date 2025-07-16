@@ -1,0 +1,114 @@
+.media-container {
+  padding-top: 78px;
+  width: 20%;
+  display: flex;
+}
+
+.media-sidebar {
+  height: 92vh;
+  overflow-y: auto;
+  scrollbar-width: none;
+  display: flex;
+  flex-direction: column;
+  width: 18%;
+  position: fixed;
+  color: white;
+  box-shadow: 1px 2px 2px rgb(222, 210, 210);
+  background-color: #fff;
+  /* background: url("https://wallpapercat.com/w/full/5/3/1/141742-3840x2160-desktop-4k-naruto-wallpaper-photo.jpg"); */
+  background-size: fill;
+  background-position: center;
+  z-index: 1;
+}
+
+.media-sidebar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+.media-objecct {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.media-objecct span {
+  display: flex;
+  align-items: center;
+  margin-left: 35px;
+  margin-top: 12px;
+  gap: 10px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.media-objecct span:hover {
+  background-color: rgba(209, 187, 159, 0.2);
+  border-radius: 10px;
+  transform: scale(1.05);
+}
+
+.media-objecct h4 {
+  margin-top: 15px;
+  margin-left: 30px;
+  font-size: 18px;
+  color: gray;
+  text-shadow: 0px 1px 2px green;
+}
+
+.media-objecct p {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.media-content {
+  margin-left: 20%;
+  display: flex;
+  margin-top: 8px;
+  flex-direction: column;
+  width: 80%;
+  position: relative; /* Needed for ::before positioning */
+  /* background: url("https://wallpapercat.com/w/full/5/3/1/141742-3840x2160-desktop-4k-naruto-wallpaper-photo.jpg"); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.media-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 29, 29, 0.9);
+  z-index: -1;
+}
+
+.media-shorts {
+  scrollbar-width: none;
+}
+
+.vl {
+  margin-right: 10px;
+  border-left: 3px solid green;
+  height: 80vh;
+}
+
+.media-video {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+}

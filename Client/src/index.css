@@ -1,0 +1,17 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+}
+:root {
+  --primary: #ff4d4d;
+  --secondary: #6c5ce7;
+  --dark: #2d3436;
+  --light: #f9f9f9;
+  --gray: #dfe6e9;
+}

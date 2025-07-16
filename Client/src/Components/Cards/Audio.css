@@ -1,0 +1,79 @@
+
+
+.audio-wrapper-box {
+  padding: 2rem;
+  background-color: #f2f2f2;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.audio-grid-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.audio-tile {
+  background: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.audio-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.audio-avatar {
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.audio-meta {
+  display: flex;
+  flex-direction: column;
+}
+
+.audio-title {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.audio-artist {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.audio-stats {
+  font-size: 0.75rem;
+  color: #aaa;
+}
+
+.audio-control-box {
+  margin-top: 0.5rem;
+}
+
+.audio-load-btn {
+  margin-top: 2rem;
+  padding: 0.75rem 2rem;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.audio-load-btn:hover {
+  background-color: #0056b3;
+}
