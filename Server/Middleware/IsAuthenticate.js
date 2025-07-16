@@ -8,9 +8,7 @@ import jwt from "jsonwebtoken";
      return res.status(401).json({ message: "Authentication required" });
    }
 
-  //  if (blacklistedTokens.has(token)) {
-  //    return res.status(401).json({ message: "Token is invalid (logged out)" });
-  //  }
+ 
 
    try {
      const decoded = jwt.verify(token, process.env.JWT_KEY);

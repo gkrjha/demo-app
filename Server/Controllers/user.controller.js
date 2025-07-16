@@ -45,7 +45,7 @@ export const signup = async (req, res) => {
       bio,
       gender,
     });
-    // console.log(newUser);
+    
     await newUser.save();
 
     return res.status(201).json({
@@ -64,7 +64,7 @@ export const signup = async (req, res) => {
   }
 };
 
-// LOGIN
+
 
 export const login = async (req, res) => {
   try {
@@ -111,7 +111,7 @@ export const login = async (req, res) => {
   }
 };
 
-// GET ALL USER
+
 
 export const getother = async (req, res) => {
   try {
@@ -124,7 +124,7 @@ export const getother = async (req, res) => {
     console.log(error);
   }
 };
-// Update User
+
 
 export const update = async (req, res) => {
   try {
@@ -163,7 +163,7 @@ export const update = async (req, res) => {
   }
 };
 
-// GET SINGLE USER
+
 
 export const getuser = async (req, res) => {
   const id = req.user.existingUser._id;

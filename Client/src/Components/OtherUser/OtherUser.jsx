@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-// import "./ProfileScreen.css";
+
 import { FiVideo, FiMessageCircle, FiPlayCircle } from "react-icons/fi";
-// import { Entypo } from "react-icons/entypo";
+
 import { MdAudioFile } from "react-icons/md";
 import "./Other.css";
 const OtherUser = () => {

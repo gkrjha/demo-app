@@ -26,7 +26,7 @@ const OtherUserProfile = () => {
     }
   }, []);
 
-  // Fetch profile, posts, and music
+  
   useEffect(() => {
     const fetchProfile = async () => {
       try {

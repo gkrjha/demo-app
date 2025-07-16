@@ -15,20 +15,20 @@ export const SocketProvider = ({ children, user }) => {
         withCredentials: true,
       });
 
-      // Socket connection established
+    
       newSocket.on("connect", () => {
         console.log("✅ Socket connected:", newSocket.id);
         newSocket.emit("addUser", user._id);
       });
 
-      // Save to state
+      
       setSocket(newSocket);
 
-      // Cleanup on unmount
+      
       return () => {
         newSocket.disconnect();
-        setSocket(null); // clear socket on logout or unmount
-        console.log("❌ Socket disconnected");
+        setSocket(null); 
+        console.log("Socket disconnected");
       };
     }
   }, [user]);

@@ -15,7 +15,7 @@ const MusicSchem = new mongoose.Schema(
     ],
     author: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: "User", // Add this line!
+      ref: "User",
       required: true,
     },
     media: { type: String },
